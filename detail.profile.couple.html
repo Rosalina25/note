@@ -1,0 +1,323 @@
+<html>
+    <head>
+        <style>
+                              #content-container {
+            display: block;
+            position: relative;
+            width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #page_main_mobile {
+            top: 0px;
+            left: 0px;
+            width: 360px;
+            height: 640px;
+        }
+
+        #bg_main_mobile {
+            position: relative;
+            width: 360px;
+            height: 703px;
+
+            background: #D7A667;
+        }
+
+        #header{
+            position: absolute;
+            width: 360px;
+            height: 75px;
+            left: 0px;
+            top: 0px;
+
+            background: #3B5552;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        #title-profile{
+            position: absolute;
+            width: 95px;
+            height: 30px;
+            left: 134px;
+            top: 6px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        #back{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 24px;
+            top: 26px;
+        }
+
+        #img-elips-profile{
+            position: absolute;
+            width: 192px;
+            height: 190px;
+            left: 84px;
+            top: 102px;
+            border-radius: 50%;
+
+            background: #FFFFFF;
+        }
+
+        #txt-profile-couple{
+            position: absolute;
+            width: 44px;
+            height: 36px;
+            left: 158px;
+            top: 258px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        #circle-cv{
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            left: 293px;
+            top: 263px;
+
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            color: #FFFFFF;
+            border-radius: 50%;
+        }
+
+        #clip-cv{
+            position: absolute;
+            width: 13.76px;
+            height: 13.76px;
+            left: 305.45px;
+            top: 275.45px;
+        }
+        #profile-list-email{
+            position: absolute;
+            width: 38px;
+            height: 21px;
+            left: 35px;
+            top: 386px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            color: #000000;
+        }
+        #list-bar{
+            position: absolute;
+            width: 286px;
+            height: 0px;
+            left: 34px;
+            top: 442px;
+
+            /* old green */
+
+            border: 1px solid #3B5552;
+        }
+
+        #profile-list-name{
+            position: absolute;
+            width: 107px;
+            height: 21px;
+            left: 35px;
+            top: 414px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            color: #000000;
+        }
+        #list-bar2{
+            position: absolute;
+            width: 286px;
+            height: 0px;
+            left: 35px;
+            top: 470px;
+
+            /* old green */
+
+            border: 1px solid #3B5552;
+        }
+
+        #profile-list-number-telp{
+            position: absolute;
+            width: 78px;
+            height: 21px;
+            left: 35px;
+            top: 442px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            color: #000000;
+
+        }
+        #list-bar3{
+            position: absolute;
+            width: 286px;
+            height: 0px;
+            left: 36px;
+            top: 500px;
+
+            /* old green */
+
+            border: 1px solid #3B5552;
+        }
+
+        #profile-list-profesi{
+            position: absolute;
+            width: 70px;
+            height: 21px;
+            left: 35px;
+            top: 473px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            color: #000000;
+
+
+        }
+        #list-bar4{
+            position: absolute;
+            width: 286px;
+            height: 0px;
+            left: 36px;
+            top: 530px;
+
+            /* old green */
+
+            border: 1px solid #3B5552;
+        }
+
+        #profile-list-birth{
+            position: absolute;
+            width: 123px;
+            height: 21px;
+            left: 35px;
+            top: 504px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            color: #000000;
+
+        }
+        #list-bar5{
+            position: absolute;
+            width: 286px;
+            height: 0px;
+            left: 36px;
+            top: 560px;
+
+            /* old green */
+
+            border: 1px solid #3B5552;
+        }
+
+        #profile-list-location{
+            position: absolute;
+            width: 43px;
+            height: 21px;
+            left: 35px;
+            top: 533px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            color: #000000;
+
+
+        }
+        #list-bar6{
+            position: absolute;
+            width: 286px;
+            height: 0px;
+            left: 36px;
+            top: 590px;
+
+            /* old green */
+
+            border: 1px solid #3B5552;
+
+        }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="content-container">
+            <div id="page_main_mobile">
+                <div id="bg_main_mobile">
+                    <div id="header">
+                        <h3 id="title-profile">Profile</h3>
+                        <img src="back.png" id="back" onclick="back">
+                            <div id="img-elips-profile"></div>
+                                <h5 id="txt-profile-couple">Toji</h5>
+                        <button id="circle-cv"></button>
+                            <img src="paper-clip 1.png" id="clip-cv">
+                                <h6 id="profile-list-email">Email</h6>
+                                    <div id="list-bar"></div>
+                                <h6 id="profile-list-name">Nama Lengkap</h6>
+                                    <div id="list-bar2"></div>
+                                <h6 id="profile-list-number-telp">No. Telepon</h6>
+                                    <div id="list-bar3"></div>
+                                <h6 id="profile-list-profesi">Pekerjaan</h6>
+                                    <div id="list-bar4"></div>
+                                <h6 id="profile-list-birth">TTL</h6>
+                                    <div id="list-bar5"></div>
+                                <h6 id="profile-list-location">Lokasi</h6>
+                                    <div id="list-bar6"></div>
+    </body>
+</html>

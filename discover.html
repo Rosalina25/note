@@ -1,0 +1,409 @@
+<html>
+
+<head>
+    <style>
+        #content-container {
+            display: block;
+            position: relative;
+            width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #page_main_mobile {
+            top: 0px;
+            left: 0px;
+            width: 360px;
+            height: 640px;
+        }
+
+        #bg_main_mobile {
+            top: 0px;
+            left: 0px;
+            width: 360px;
+            height: 640px;
+            background: rgba(59, 85, 82, 1);
+        }
+
+        #find-out {
+            position: absolute;
+            width: 116px;
+            height: 19px;
+            left: 120px;
+            top: 33px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        #underline {
+            position: absolute;
+            width: 116px;
+            height: 0px;
+            left: 120px;
+            top: 76px;
+            border: 1px solid #FFFFFF;
+            transform: rotate(0.49deg);
+        }
+
+        #rectangle-shadow {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 235px;
+            height: 224px;
+            right: -58px;
+            top: 58px;
+            background: rgba(255, 247, 247, 0.33);
+            border-radius: 24px;
+
+        }
+
+        #rectangle {
+            position: absolute;
+            width: 268px;
+            height: 255px;
+            right: -18px;
+            top: 15px;
+            background: #FEE6BF;
+            border-radius: 24px;
+        }
+
+        #rectangle1 {
+            position: absolute;
+            width: 297px;
+            height: 276px;
+            right: -19px;
+            top: 23px;
+
+            background: #D7A667;
+            border-radius: 24px;
+        }
+
+        #name {
+            position: absolute;
+            width: 150px;
+            height: 32px;
+            left: 70px;
+            top: -8px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 34px;
+            text-align: center;
+
+            color: #FFFFFF;
+
+        }
+
+
+
+        #address {
+            position: absolute;
+            width: 55px;
+            height: 21px;
+            left: 71px;
+            top: 129px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        #age {
+            position: absolute;
+            width: 35px;
+            height: 21px;
+            left: 169px;
+            top: 129px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+
+        }
+
+        #profession {
+            position: absolute;
+            width: 63px;
+            height: 54px;
+            left: 71px;
+            top: 162px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+
+            color: #FFFFFF;
+
+        }
+
+        #status {
+            position: absolute;
+            width: 63px;
+            height: 54px;
+            left: 71px;
+            top: 182px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+
+            color: #FFFFFF;
+
+        }
+
+        #ttl {
+            position: absolute;
+            width: 63px;
+            height: 54px;
+            left: 71px;
+            top: 202px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+
+            color: #FFFFFF;
+
+        }
+
+        #programmer {
+            position: absolute;
+            width: 84px;
+            height: 18px;
+            left: 159px;
+            top: 162px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+
+        }
+
+        #single {
+            position: absolute;
+            width: 47px;
+            height: 18px;
+            left: 159px;
+            top: 182px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+
+        }
+
+        #birth {
+            position: absolute;
+            width: 111px;
+            height: 18px;
+            left: 159px;
+            top: 202px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+        }
+
+
+        #elips {
+            position: absolute;
+            width: 48px;
+            height: 47px;
+            left: 38px;
+            top: 300px;
+            border-radius: 50%;
+
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        #elips1 {
+            position: absolute;
+            width: 48px;
+            height: 47px;
+            right: 38px;
+            top: 300px;
+            border-radius: 50%;
+
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        #elips-profile {
+            align-items: center;
+            position: absolute;
+            width: 65px;
+            height: 64px;
+            left: 111px;
+            top: 290px;
+            border-radius: 50%;
+
+            background: #8DC640;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        #ahmad {
+            position: absolute;
+            width: 67px;
+            height: 96px;
+            left: 111px;
+            top: 57px;
+
+        }
+
+        #reload {
+            position: absolute;
+            width: 27px;
+            height: 26px;
+            left: 49px;
+            top: 311px;
+        }
+
+        #profile {
+            position: absolute;
+            width: 33px;
+            height: 33px;
+            left: 126px;
+            top: 307px;
+        }
+
+        #cancel {
+            position: absolute;
+            width: 22px;
+            height: 23px;
+            right: 50px;
+            top: 311px;
+        }
+
+        #menu {
+            position: absolute;
+            width: 24.14px;
+            height: 19px;
+            left: 275px;
+            top: -123px;
+        }
+
+        #bottom-nav {
+            position: absolute;
+            width: 360px;
+            height: 80px;
+            left: -30px;
+            top: 388px;
+
+            background: rgba(215, 166, 103, 0.19);
+        }
+
+        #discoverr {
+            position: absolute;
+            width: 44px;
+            height: 39px;
+            left: 60px;
+            top: 23px;
+        }
+
+        #notif {
+            position: absolute;
+            width: 45px;
+            height: 41px;
+            left: 126px;
+            top: 23px;
+        }
+
+        #message {
+            position: absolute;
+            width: 31px;
+            height: 41px;
+            left: 199px;
+            top: 23px;
+        }
+
+        #on-profile {
+            position: absolute;
+            width: 31px;
+            height: 41px;
+            left: 261px;
+            top: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content-container">
+        <div id="page_main_mobile">
+            <div id="bg_main_mobile">
+                <h3 id="find-out">Temukan</h3>
+                <div id="underline">
+                    <div id="rectangle-shadow">
+                        <div id="rectangle">
+                            <div id="rectangle1">
+                                <img id="menu" src="menu.png">
+                                <h3 id="name">Ahmad Toji</h3>
+                                <img id="ahmad" src="ahmad.png">
+                                <h6 id="address">Jakarta</h6>
+                                <h6 id="age">22 th</h6>
+                                <h6 id="profession">Pekerjaan</h6>
+                                <h6 id="status">Status</h6>
+                                <h6 id="ttl">TTL</h6>
+                                <h6 id="programmer">: Programmer</h6>
+                                <h6 id="single">: Lajang</h6>
+                                <h6 id="birth">: Jakarta, 3-3-1991</h6>
+                                <button id="elips"></button>
+                                <img id="reload" src="reload.png">
+                                <button id="elips-profile"></button>
+                                <img id="profile" src="profile.png">
+                                <button id="elips1"></button>
+                                <img id="cancel" src="cancel.png">
+                                <div id="bottom-nav">
+                                    <img id="discoverr" src="discover.png">
+                                    <div id="dis-underline">
+                                        <img id="notif" src="notification.png">
+                                        <img id="message" src="messege.png">
+                                        <img id="on-profile" src="on-profile.png">
+                                    <div>
+
+                                    </div>
+
+
+                                        
+
+
+
+</body>
+
+</html>

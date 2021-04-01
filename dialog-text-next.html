@@ -1,0 +1,381 @@
+<html>
+    <head>
+        <style>
+                           #content-container {
+            display: block;
+            position: relative;
+            width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #page_main_mobile {
+            top: 0px;
+            left: 0px;
+            width: 360px;
+            height: 640px;
+        }
+
+        #bg_main_mobile {
+            position: relative;
+            width: 360px;
+            height: 703px;
+
+            background: #ffffff;
+        }
+
+        #header{
+            position: absolute;
+            width: 360px;
+            height: 75px;
+            left: 0px;
+            top: 0px;
+
+            background: #3B5552;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        #notif{
+            position: absolute;
+            width: 95px;
+            height: 30px;
+            left: 134px;
+            top: 6px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        #back{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 24px;
+            top: 26px;
+        }
+
+        #today{
+            position: absolute;
+            width: 53px;
+            height: 23px;
+            left: 154px;
+            top: 129px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: rgba(0, 0, 0, 0.27);
+        }
+        #chat-sender{
+            position: absolute;
+            width: 186px;
+            height: 45px;
+            left: 160px;
+            top: 208px;
+
+            background: #3B5552;
+            border-radius: 29px 29px 0px 29px;
+        }
+
+        #fulan{
+            position: absolute;
+            width: 36px;
+            height: 20px;
+            left: 307px;
+            top: 223px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #383838;
+
+        }
+
+        #guardian{
+            position: absolute;
+            width: 29px;
+            height: 20px;
+            left: 25px;
+            top: 243px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #383838;
+        }
+
+        #guardian-box{
+            position: absolute;
+            width: 186px;
+            height: 45px;
+            left: 14px;
+            top: 291px;
+
+            background: #FEE6BF;
+            border-radius: 0px 29px 29px 29px;
+        }
+
+        #fulanah-box{
+            position: absolute;
+            width: 186px;
+            height: 45px;
+            left: 14px;
+            top: 357px;
+
+            background: #FEE6BF;
+            border-radius: 29px;
+        }
+
+        #fulanah-message{
+            position: absolute;
+            width: 54px;
+            height: 20px;
+            left: 27px;
+            top: 373px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #383838;
+
+        }
+
+        #chat-sender2{
+            position: absolute;
+            width: 186px;
+            height: 45px;
+            left: 160px;
+            top: 438px;
+
+            background: #3B5552;
+            border-radius: 29px 29px 0px 29px;
+        }
+
+        #fulan2{
+            position: absolute;
+            width: 36px;
+            height: 20px;
+            left: 307px;
+            top: 453px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #383838;
+
+        }
+
+        #fulanah-box2{
+            position: absolute;
+            width: 186px;
+            height: 45px;
+            left: 14px;
+            top: 527px;
+
+            background: #FEE6BF;
+            border-radius: 29px;
+        }
+
+        #fulanah-message2{
+            position: absolute;
+            width: 54px;
+            height: 20px;
+            left: 27px;
+            top: 543px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #383838;
+
+        }
+
+        #type{
+            position: absolute;
+            width: 271px;
+            height: 43px;
+            left: 14px;
+            top: 638px;
+
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 29px;
+        }
+
+        #typing{
+            position: absolute;
+            width: 144px;
+            height: 23px;
+            left: 40px;
+            top: 628px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        #send-elips{
+            position: absolute;
+            width: 43px;
+            height: 43px;
+            left: 296px;
+            top: 638px;
+
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+        }
+
+        #send-icon{
+            position: absolute;
+            left: 86.67%;
+            right: 8.61%;
+            top: 650px;
+            bottom: 6.56%;
+
+        }
+
+        #rectangle-dialog-text{
+            position: absolute;
+            width: 327px;
+            height: 282px;
+            left: 17px;
+            top: 92px;
+
+            background: #ffffff;
+            border-radius: 20px;
+        }
+
+        #text-dialog-next{
+            position: absolute;
+            width: 295px;
+            height: 103px;
+            left: 33px;
+            top: 152px;
+
+            /* chat */
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            /* or 133% */
+
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        #allow{
+            position: absolute;
+            width: 103px;
+            height: 46px;
+            left: 44px;
+            top: 284px;
+
+            background: #FEE6BF;
+            border-radius: 30px;
+        }
+        
+        #refuse{
+            position: absolute;
+            width: 103px;
+            height: 46px;
+            left: 209px;
+            top: 284px;
+
+            background: #FEE6BF;
+            border-radius: 30px;
+        }
+
+        
+        </style>
+    </head>
+    <body>
+        <div id="content-container">
+            <div id="page_main_mobile">
+                <div id="bg_main_mobile">
+                    <div id="header">
+                        <h3 id="notif">Fulanah</h3>
+                        <img src="back.png" id="back" onclick="back">
+                    </div>                
+                    <h6 id="today">Hari ini</h6>
+                    <div id="chat-sender"></div>
+                    <h6 id="fulan">Fulan</h6>
+                    <h6 id="guardian">Wali</h6>
+                    <div id="guardian-box"></div>
+                    <div id="fulanah-box">
+                    </div>
+                    <h6 id="fulanah-message">Fulanah</h6>
+                    <div id="chat-sender2"></div>
+                    <h6 id="fulan2">Fulan</h6>
+                    <div id="fulanah-box2">
+                    </div>
+                    <h6 id="fulanah-message2">Fulanah</h6>
+                    <div id="type"></div>
+                    <h4 id="typing">Ketik Pesan Anda...</h4>
+                    <button id="send-elips"></button>
+                    </div>
+                    <img src="send.png" id="send-icon">
+                    <div id="rectangle-dialog-text"></div>
+                    <h6 id="text-dialog-next">Dengan menekan tombol ‘ok’ anda yakin
+                        melanjutkan proses diluar aplikasi?</h6>
+                        <button id="allow">Izinkan</button>
+                        <button id="refuse">Tolak</button>
+
+
+    </body>
+</html>

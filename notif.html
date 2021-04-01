@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <style>
+               #content-container {
+            display: block;
+            position: relative;
+            width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #page_main_mobile {
+            top: 0px;
+            left: 0px;
+            width: 360px;
+            height: 640px;
+        }
+
+        #bg_main_mobile {
+            position: relative;
+            width: 360px;
+            height: 703px;
+
+            background: #ffffff;
+        }
+
+        #header{
+            position: absolute;
+            width: 360px;
+            height: 75px;
+            left: 0px;
+            top: 0px;
+
+            background: #3B5552;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        #notif{
+            position: absolute;
+            width: 95px;
+            height: 30px;
+            left: 134px;
+            top: 6px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        #back{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 24px;
+            top: 26px;
+        }
+
+        #early{
+            position: absolute;
+            width: 165px;
+            height: 18px;
+            left: -43px;
+            top: 54px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        #circle-notif{
+            position: absolute;
+            width: 52px;
+            height: 52px;
+            left: 24px;
+            top: 113px;
+            border-radius: 50%;
+
+            background: #C4C4C4;
+        }
+
+        #notif-first{
+            position: absolute;
+            width: 171px;
+            height: 23px;
+            left: 66px;
+            top: -18px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #000000;
+        }
+
+        #notif1{
+            position: absolute;
+            width: 199px;
+            height: 13px;
+            left: 40px;
+            top: 8px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 9px;
+            line-height: 13px;
+            text-align: center;
+
+            color: #828282;
+        }
+
+        #line-notif{
+            position: absolute;
+            width: 236.02px;
+            height: 0px;
+            left: 77px;
+            top: 48;
+
+            border: 0.5px solid #000000;
+        }
+
+        #circle-notif2{
+            position: absolute;
+            width: 52px;
+            height: 52px;
+            left: 0px;
+            top: 80px;
+            border-radius: 50%;
+
+            background: #C4C4C4;
+        }
+
+        #notif-second{
+            position: absolute;
+            width: 171px;
+            height: 23px;
+            left: 73px;
+            top: -18px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #000000;
+        }
+
+        #this-month{
+            position: absolute;
+            width: 165px;
+            height: 18px;
+            left: -43px;
+            top: 53px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+
+            color: #000000;
+        }
+
+        #this-circle-notif{
+            position: absolute;
+            width: 52px;
+            height: 52px;
+            left: 0px;
+            top: 120px;
+            border-radius: 50%;
+
+            background: #C4C4C4;
+
+        }
+
+        #this-circle-notif2{
+            position: absolute;
+            width: 52px;
+            height: 52px;
+            left: 0px;
+            top: 80px;
+            border-radius: 50%;
+
+            background: #C4C4C4;
+
+        }
+
+        #messagee{
+            position: absolute;
+            left: 85%;
+            right: 8.33%;
+            top: -43px;
+            bottom: 42.2%;
+        }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="content-container">
+            <div id="page_main_mobile">
+                <div id="bg_main_mobile">
+                    <div id="header">
+                        <h3 id="notif">Notifikasi</h3>
+                        <img src="back.png" id="back" onclick="back">
+                        <h5 id="early">Earlier</h5>
+                        <div id="circle-notif">
+                            <h5 id="notif-first">Toji mengajak ta'aruf !</h5>
+                            <h6 id="notif1">tekan untuk melihat profile. 5h</h6>
+                            <div id="line-notif">
+
+                    </div>
+                    <div id="circle-notif2">
+                        <h5 id="notif-second">Wayn mengajak ta'aruf !</h5>
+                        <h6 id="notif1">tekan untuk melihat profile. 7h</h6>
+                        <div id="line-notif">
+                        </div>
+
+                        <div id="circle-notif2">
+                            <h5 id="notif-second">Jaehyun menolak ta'aruf</h5>
+                            <h6 id="notif1">tekan untuk melihat profile. 8h</h6>
+                            <div id="line-notif">
+                            </div>   
+
+                            <!-- this-month-notifications -->
+
+                            <h5 id="this-month">This Month</h5>
+                            <div id="this-circle-notif">
+                                <h5 id="notif-second">Mew menerima ta'aruf !</h5>
+                                <h6 id="notif1">tekan untuk melihat profile. 5h</h6>
+                                <div id="line-notif">
+                                    <img src="message.png" id="messagee">
+                                </div>  
+
+                                <div id="this-circle-notif2">
+                                    <h5 id="notif-second">Mew mengajak ta'aruf !</h5>
+                                    <h6 id="notif1">tekan untuk melihat profile. 7h</h6>
+                                    <div id="line-notif">
+                                    </div> 
+                                    
+                                    <div id="this-circle-notif2">
+                                        <h5 id="notif-second">Mew mengajak ta'aruf !</h5>
+                                        <h6 id="notif1">tekan untuk melihat profile. 7h</h6>
+                                        <div id="line-notif">
+                                        </div> 
+
+                                        <div id="this-circle-notif2">
+                                            <h5 id="notif-second">Wayn mengajak ta'aruf !</h5>
+                                            <h6 id="notif1">tekan untuk melihat profile. 7h</h6>
+                                            <div id="line-notif">
+                                            </div> 
+
+
+    </body>
+</html>

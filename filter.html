@@ -1,0 +1,390 @@
+<html>
+    <head>
+        <style>
+             #content-container {
+            display: block;
+            position: relative;
+            width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #page_main_mobile {
+            top: 0px;
+            left: 0px;
+            width: 360px;
+            height: 640px;
+        }
+
+        #bg_main_mobile {
+            position: relative;
+            width: 360px;
+            height: 703px;
+
+            background: #FEE6BF;
+        }
+
+        #header{
+            position: absolute;
+            width: 360px;
+            height: 75px;
+            left: 0px;
+            top: 0px;
+
+            background: #3B5552;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        #filter{
+            position: absolute;
+            width: 52px;
+            height: 30px;
+            left: 143px;
+            top: 11px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+        }
+
+        #back{
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            left: 27px;
+            top: 33px;
+        }
+
+        #age{
+            position: absolute;
+            width: 33px;
+            height: 24px;
+            left: 56px;
+            top: 72px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #000000;
+        }
+
+        #rectangle-filter{
+            position: absolute;
+            width: 258px;
+            height: 75px;
+            left: 40px;
+            top: 142px;
+
+            background: #FEE6BF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+
+        #elips-filter{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 64px;
+            top: 154px;
+
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        #filter-age{
+            position: absolute;
+            width: 46px;
+            height: 21px;
+            left: 86px;
+            top: 118px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        #elips-filter2{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 64px;
+            top: 184px;
+
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        #filter-age2{
+            position: absolute;
+            width: 46px;
+            height: 21px;
+            left: 86px;
+            top: 149px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        #elips-filter3{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 194px;
+            top: 154px;
+
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        #filter-age3{
+            position: absolute;
+            width: 46px;
+            height: 21px;
+            left: 219px;
+            top: 119px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        #elips-filter4{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 194px;
+            top: 184px;
+
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        #filter-age4{
+            position: absolute;
+            width: 59px;
+            height: 21px;
+            left: 219px;
+            top: 149px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        #location{
+            position: absolute;
+            width: 71px;
+            height: 24px;
+            left: 56px;
+            top: 218px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #000000;
+        }
+
+        #province{
+            position: absolute;
+            width: 146px;
+            height: 37px;
+            left: 40px;
+            top: 299px;
+
+            background: #FEE6BF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+        }
+
+        #text-province{
+            position: absolute;
+            width: 54px;
+            height: 21px;
+            left: 61px;
+            top: 274px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+        }
+
+        #arrow-below{
+            position: absolute;
+            width: 17.5px;
+            height: 10px;
+            left: 143.5px;
+            top: 310px;
+
+            border: 1.5px solid #000000;
+            border-radius: 1px;
+        }
+
+        #city{
+            position: absolute;
+            width: 146px;
+            height: 37px;
+            left: 40px;
+            top: 353px;
+
+            background: #FEE6BF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+        }
+
+        #text-city{
+            position: absolute;
+            width: 32px;
+            height: 21px;
+            left: 61px;
+            top: 328px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+        }
+
+        #arrow-below2{
+            position: absolute;
+            width: 17.5px;
+            height: 10px;
+            left: 143.5px;
+            top: 365px;
+
+            border: 1.5px solid #000000;
+            border-radius: 1px;
+        }
+
+        #reset-filter{
+            position: absolute;
+            width: 161px;
+            height: 32px;
+            left: 98px;
+            top: 580px;
+        }
+
+        #apply-filter{
+            position: absolute;
+            width: 161px;
+            height: 32px;
+            left: 98px;
+            top: 630px;
+
+            background: #D7A667;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 7px;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="content-container">
+            <div id="page_main_mobile">
+                <div id="bg_main_mobile">
+                    <div id="header">
+                    </div>
+                    <h3 id="filter">Filter</h3>
+                    <img src="back.png" id="back">
+                    <h6 id="age">Age</h6>
+                    <div id="rectangle-filter"></div>
+                    <img src="elips-filter.png" id="elips-filter">
+                    <h6 id="filter-age">18 - 20</h6>
+                    <img src="elips-filter.png" id="elips-filter2">
+                    <h6 id="filter-age2">20 - 25</h6>
+                    <img src="elips-filter.png" id="elips-filter3">
+                    <h6 id="filter-age3">25 - 30</h6>
+                    <img src="elips-filter.png" id="elips-filter4">
+                    <h6 id="filter-age4">30 - 35+</h6>
+                    <h6 id="location">Location</h6>
+                    <button id="province"></button> 
+                    <h6 id="text-province">Provinsi</h6>        
+                    <img src="arrow-bottom.png" id="arrow-below">
+                    <button id="city"></button> 
+                    <h6 id="text-city">Kota</h6>        
+                    <img src="arrow-bottom.png" id="arrow-below2">     
+                    <button id="reset-filter">Reset Filter</button>    
+                    <button id="apply-filter">Apply Filter</button>  
+    </body>
+
+</html>
